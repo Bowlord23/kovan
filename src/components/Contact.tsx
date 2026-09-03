@@ -21,7 +21,7 @@ export function Contact() {
       </Reveal>
 
       <Reveal delay={140} className="mt-14 grid gap-px bg-border sm:grid-cols-3">
-        <div className="bg-background py-6 pr-6">
+        <div className="bg-background py-6 pl-5 pr-6">
           <p className="label-mono">Telegram</p>
           <a
             href={person.telegram.href}
@@ -32,7 +32,7 @@ export function Contact() {
             {person.telegram.label} ↗
           </a>
         </div>
-        <div className="bg-background py-6 pr-6">
+        <div className="bg-background py-6 pl-5 pr-6">
           <p className="label-mono">Email</p>
           <a
             href={person.email.href}
@@ -41,7 +41,7 @@ export function Contact() {
             {person.email.label}
           </a>
         </div>
-        <div className="bg-background py-6 pr-6">
+        <div className="bg-background py-6 pl-5 pr-6">
           <p className="label-mono">Локация</p>
           <p className="mt-2 text-base text-muted-foreground">{person.location}</p>
         </div>

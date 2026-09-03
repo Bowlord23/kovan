@@ -5,6 +5,8 @@
  * fit: "cover" для рендеров, "contain" для wireframe / UV / технических изображений.
  */
 
+import heroImage from "@/assets/tretya-pryadilnaya.png.asset.json";
+
 export type CaseImage = {
   image: string | null;
   label: string;
@@ -23,21 +25,21 @@ export type CaseBlock = {
 
 export const caseStudy = {
   eyebrow: "Проект 01",
-  title: "Жилой комплекс",
+  title: "Третья Прядильная",
   subtitle: "ВПМ · НПМ · АГР",
   meta: [
     { label: "Год", value: "2026" },
-    { label: "Тип объекта", value: "Жилой комплекс" },
+    { label: "Тип объекта", value: "Жилой дом" },
     {
       label: "Роль",
       value: "3D-моделирование · оптимизация · UV · текстурирование · техническая подготовка",
     },
-    { label: "Программы", value: "Blender · Photoshop · Substance 3D Painter" },
+    { label: "Программы", value: "Blender · Photoshop" },
   ],
-  task: "Подготовка высокополигональной и низкополигональной моделей объекта для АГР.",
+  task: "Проект жилого дома на улице Третья Прядильная. Для проекта выполнены низкополигональная и высокополигональная модели — объект капитального строительства и комплексное благоустройство участка.",
   hero: {
-    image: null,
-    label: "RENDER 01",
+    image: heroImage.url,
+    label: "Третья Прядильная",
     caption: "1920 × 1080",
     ratio: "16 / 9",
     fit: "cover",
@@ -46,7 +48,7 @@ export const caseStudy = {
     {
       index: "01",
       title: "Задача",
-      text: "Исходными данными для проекта являлись архитектурные чертежи и проектная документация. Задача заключалась в создании технически корректной ВПМ и последующей подготовке оптимизированной НПМ для использования в составе АГР.",
+      text: "Исходными данными для проекта являлись чертежи в формате DWG и буклет АГР. Задача заключалась в создании технически корректной ВПМ и последующей подготовке оптимизированной НПМ для использования в составе АГР.",
       images: [],
       columns: 1,
     },
@@ -97,7 +99,7 @@ export const caseStudy = {
       title: "Результат",
       text: "Модель была подготовлена к технической проверке и передаче в составе комплекта АГР.",
       images: [
-        { image: null, label: "FINAL RENDER", caption: "1920 × 1080", ratio: "16 / 9", fit: "cover" },
+        { image: heroImage.url, label: "Третья Прядильная", caption: "1920 × 1080", ratio: "16 / 9", fit: "cover" },
       ],
       columns: 1,
     },

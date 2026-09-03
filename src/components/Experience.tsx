@@ -12,8 +12,7 @@ export function Experience() {
             className="grid gap-4 border-t border-border py-8 first:border-t-0 first:pt-0 md:grid-cols-[200px_minmax(0,1fr)]"
           >
             <div>
-              <p className="text-sm">{item.period}</p>
-              <p className="mt-1 label-mono">{item.dates}</p>
+              <p className="text-lg font-medium tracking-tight md:text-xl">{item.period}</p>
             </div>
             <div className="max-w-2xl">
               <h3 className="text-base font-medium">{item.title}</h3>
