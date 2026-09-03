@@ -5,6 +5,8 @@
  * Пока image = null — показывается аккуратный placeholder.
  */
 
+import heroImage from "@/assets/tretya-pryadilnaya.png.asset.json";
+
 export type Project = {
   id: string;
   number: string;
@@ -21,8 +23,8 @@ export const projects: Project[] = [
   {
     id: "p01",
     number: "01",
-    title: "Жилой комплекс",
-    image: null,
+    title: "Третья Прядильная",
+    image: heroImage.url,
     type: "Жилой комплекс",
     year: 2026,
     tags: ["ВПМ", "НПМ", "АГР"],

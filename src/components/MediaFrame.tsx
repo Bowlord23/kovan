@@ -30,7 +30,7 @@ export function MediaFrame({
     return (
       <div
         style={{ aspectRatio: ratio }}
-        className={`flex w-full flex-col items-center justify-center gap-1.5 border border-border bg-surface/60 ${className}`}
+        className={`flex w-full flex-col items-center justify-center gap-1.5 rounded-[2px] border border-border bg-surface/60 ${className}`}
       >
         <span className="label-mono text-foreground/70">{label}</span>
         {caption ? <span className="label-mono">{caption}</span> : null}
@@ -44,7 +44,7 @@ export function MediaFrame({
       type="button"
       onClick={() => openLightbox({ src, alt: alt ?? label, fit })}
       style={{ aspectRatio: ratio }}
-      className={`group block w-full overflow-hidden border border-border bg-surface/60 ${className}`}
+      className={`group block w-full overflow-hidden rounded-[2px] border border-border bg-surface/60 ${className}`}
       aria-label={`Открыть изображение: ${alt ?? label}`}
     >
       <img

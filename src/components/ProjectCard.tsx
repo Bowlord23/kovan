@@ -8,11 +8,11 @@ export function ProjectCard({ project }: { project: Project }) {
         <MediaFrame
           src={project.image}
           alt={`${project.title} — ${project.tags.join(" · ")}`}
-          label={`PROJECT ${project.number}`}
+          label={project.title}
           caption="1600 × 1200"
           hint="Replace later"
           ratio="4 / 3"
-          className="border-border"
+          className="rounded-[2px] border-border"
         />
         <div className="pointer-events-none absolute inset-0 bg-background/0 transition-colors duration-300 group-hover:bg-background/25" />
         <span className="pointer-events-none absolute right-3 top-3 text-sm text-foreground opacity-0 transition-opacity duration-300 group-hover:opacity-100">
