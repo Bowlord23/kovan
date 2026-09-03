@@ -40,7 +40,16 @@ export function Header() {
           ))}
         </nav>
 
-        <button
+        <div className="flex items-center gap-4">
+          <a
+            href={person.telegram.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-border px-3 py-1.5 text-xs transition-colors duration-300 hover:border-foreground/60 hover:bg-surface md:text-sm"
+          >
+            {person.telegram.label} ↗
+          </a>
+          <button
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
@@ -48,7 +57,8 @@ export function Header() {
           className="label-mono transition-colors hover:text-foreground md:hidden"
         >
           {open ? "Закрыть" : "Меню"}
-        </button>
+          </button>
+        </div>
       </div>
 
       {open ? (

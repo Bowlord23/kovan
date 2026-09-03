@@ -74,10 +74,26 @@
   }
 
   body {
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     font-synthesis-weight: none;
+  }
+
+  input,
+  textarea,
+  [contenteditable="true"] {
+    cursor: text;
+    user-select: text;
+    -webkit-user-select: text;
+  }
+
+  a,
+  button {
+    cursor: pointer;
   }
 
   ::selection {
