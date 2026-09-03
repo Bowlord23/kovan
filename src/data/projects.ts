@@ -1,11 +1,21 @@
 /**
  * ДАННЫЕ ПРОЕКТОВ
- * Чтобы заменить проект — отредактируйте поля ниже.
- * image: путь к изображению (например "/images/project-01.jpg").
- * Пока image = null — показывается аккуратный placeholder.
+ *
+ * КАК САМОМУ ЗАМЕНИТЬ КАРТИНКУ (без промптов):
+ * 1. Положите новый файл в папку `public/images/` (например public/images/01.jpg).
+ * 2. В нужном проекте ниже впишите: image: "/images/01.jpg".
+ * Всё — картинка заменится. Имя файла может быть любым.
+ * Если image: null — показывается аккуратный placeholder.
+ *
+ * Сейчас используются загруженные изображения из src/assets (CDN).
  */
 
-import heroImage from "@/assets/tretya-pryadilnaya.png.asset.json";
+import img01 from "@/assets/01.png.asset.json";
+import img02 from "@/assets/02.png.asset.json";
+import img03 from "@/assets/03.png.asset.json";
+import img04 from "@/assets/04.png.asset.json";
+import img05 from "@/assets/05.png.asset.json";
+import img06 from "@/assets/06.png.asset.json";
 
 export type Project = {
   id: string;
@@ -14,120 +24,86 @@ export type Project = {
   image: string | null;
   type: string;
   year: number;
-  tags: string[];
+  tagsLeft: string;
+  tagsRight: string;
   description: string;
   featured: boolean;
 };
+
+const LEFT = "ОКС · Благоустройство";
+const RIGHT = "ВПМ+НПМ";
 
 export const projects: Project[] = [
   {
     id: "p01",
     number: "01",
     title: "Третья Прядильная",
-    image: heroImage.url,
+    image: img01.url,
     type: "Жилой комплекс",
     year: 2026,
-    tags: ["ВПМ", "НПМ", "АГР"],
+    tagsLeft: LEFT,
+    tagsRight: RIGHT,
     description: "Подготовка ВПМ и НПМ жилого комплекса для АГР.",
     featured: true,
   },
   {
     id: "p02",
     number: "02",
-    title: "Жилой дом",
-    image: null,
+    title: "Садовая",
+    image: img02.url,
     type: "Жилой дом",
     year: 2025,
-    tags: ["ОКС", "Благоустройство", "ВПМ"],
+    tagsLeft: LEFT,
+    tagsRight: RIGHT,
     description: "Моделирование ОКС и прилегающего благоустройства.",
     featured: false,
   },
   {
     id: "p03",
     number: "03",
-    title: "Образовательный комплекс",
-    image: null,
+    title: "Гимназия №41",
+    image: img03.url,
     type: "Образовательный комплекс",
     year: 2025,
-    tags: ["НПМ", "Оптимизация", "АГР"],
+    tagsLeft: LEFT,
+    tagsRight: RIGHT,
     description: "Оптимизация геометрии и подготовка НПМ.",
     featured: false,
   },
   {
     id: "p04",
     number: "04",
-    title: "Многофункциональный комплекс",
-    image: null,
+    title: "Малышева",
+    image: img04.url,
     type: "МФК",
     year: 2025,
-    tags: ["ВПМ", "UV", "Текстуры"],
+    tagsLeft: LEFT,
+    tagsRight: RIGHT,
     description: "UV-развёртки и текстурные наборы фасадов.",
     featured: false,
   },
   {
     id: "p05",
     number: "05",
-    title: "Жилой квартал",
-    image: null,
+    title: "Блок 4",
+    image: img05.url,
     type: "Квартал",
     year: 2025,
-    tags: ["ОКС", "Благоустройство", "НПМ"],
+    tagsLeft: LEFT,
+    tagsRight: RIGHT,
     description: "Квартальная застройка с благоустройством и МАФ.",
     featured: false,
   },
   {
     id: "p06",
     number: "06",
-    title: "Общественное здание",
-    image: null,
+    title: "Волковский",
+    image: img06.url,
     type: "Общественное здание",
     year: 2025,
-    tags: ["ВПМ", "НПМ", "АГР"],
+    tagsLeft: LEFT,
+    tagsRight: RIGHT,
     description: "Проработка фасадных решений и подготовка к подаче.",
-    featured: false,
-  },
-  {
-    id: "p07",
-    number: "07",
-    title: "Жилой комплекс",
-    image: null,
-    type: "Жилой комплекс",
-    year: 2025,
-    tags: ["НПМ", "Оптимизация", "АГР"],
-    description: "Оптимизация полигональности и контроль нормалей.",
-    featured: false,
-  },
-  {
-    id: "p08",
-    number: "08",
-    title: "Архитектурный объект",
-    image: null,
-    type: "Архитектурный объект",
-    year: 2025,
-    tags: ["ВПМ", "Текстуры", "АГР"],
-    description: "Моделирование по проектной документации.",
-    featured: false,
-  },
-  {
-    id: "p09",
-    number: "09",
-    title: "Благоустройство",
-    image: null,
-    type: "Благоустройство",
-    year: 2025,
-    tags: ["МАФ", "Растительность", "НПМ"],
-    description: "МАФ, покрытия, растительность, малые формы.",
-    featured: false,
-  },
-  {
-    id: "p10",
-    number: "10",
-    title: "ОКС",
-    image: null,
-    type: "ОКС",
-    year: 2025,
-    tags: ["ОКС", "ВПМ", "АГР"],
-    description: "Подготовка модели ОКС к технической проверке.",
     featured: false,
   },
 ];
