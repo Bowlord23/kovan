@@ -52,8 +52,8 @@ export const caseStudy = {
       title: "Моделирование",
       text: "На основе проектной документации была создана геометрия ОКС с проработкой основных архитектурных элементов и фасадов. Отдельное внимание уделялось соответствию проектным габаритам и архитектурному облику объекта.",
       images: [
-        { image: null, label: "ВПМ · Общий вид", caption: "1920 × 1080", ratio: "3 / 2", fit: "cover" },
-        { image: null, label: "ВПМ · Детали фасада", caption: "1920 × 1080", ratio: "3 / 2", fit: "cover" },
+        { image: "./images/oks.png", label: "ВПМ · Общий вид", caption: "1920 × 1080", ratio: "3 / 2", fit: "cover" },
+        { image: "./images/fas.png", label: "ВПМ · Детали фасада", caption: "1920 × 1080", ratio: "3 / 2", fit: "cover" },
       ],
       columns: 2,
     },
