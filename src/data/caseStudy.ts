@@ -94,7 +94,7 @@ export const caseStudy = {
       title: "Результат",
       text: "Модель была подготовлена к технической проверке и передаче в составе комплекта АГР.",
       images: [
-        { image: "./images/vid.png", label: "Фасады — материалы", caption: "1920 × 1080", ratio: "16 / 9", fit: "contain" },
+        { image: "./images/vid.png", label: "Финальный вид", caption: "1920 × 1080", ratio: "16 / 9", fit: "contain" },
       ],
       columns: 1,
     },
