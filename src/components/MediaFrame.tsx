@@ -13,6 +13,7 @@ export function MediaFrame({
   ratio = "3 / 2",
   fit = "cover",
   hint,
+  zoomable = true,
   className = "",
 }: {
   src?: string | null;
@@ -22,6 +23,7 @@ export function MediaFrame({
   ratio?: string;
   fit?: "cover" | "contain";
   hint?: string;
+  zoomable?: boolean;
   className?: string;
 }) {
   const openLightbox = useLightbox();
@@ -39,6 +41,31 @@ export function MediaFrame({
     );
   }
 
+  const img = (
+    <img
+      src={src}
+      alt={alt ?? label}
+      loading="lazy"
+      decoding="async"
+      className={`h-full w-full ${
+        zoomable
+          ? "transition-transform duration-[350ms] ease-out group-hover:scale-[1.03]"
+          : ""
+      } ${fit === "contain" ? "object-contain" : "object-cover"}`}
+    />
+  );
+
+  if (!zoomable) {
+    return (
+      <div
+        style={{ aspectRatio: ratio }}
+        className={`block w-full overflow-hidden rounded-[2px] border border-border bg-surface/60 ${className}`}
+      >
+        {img}
+      </div>
+    );
+  }
+
   return (
     <button
       type="button"
@@ -47,15 +74,7 @@ export function MediaFrame({
       className={`group block w-full overflow-hidden rounded-[2px] border border-border bg-surface/60 ${className}`}
       aria-label={`Открыть изображение: ${alt ?? label}`}
     >
-      <img
-        src={src}
-        alt={alt ?? label}
-        loading="lazy"
-        decoding="async"
-        className={`h-full w-full transition-transform duration-[350ms] ease-out group-hover:scale-[1.03] ${
-          fit === "contain" ? "object-contain" : "object-cover"
-        }`}
-      />
+      {img}
     </button>
   );
 }

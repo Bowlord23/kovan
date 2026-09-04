@@ -5,7 +5,14 @@
  * fit: "cover" для рендеров, "contain" для wireframe / UV / технических изображений.
  */
 
-import heroImage from "@/assets/tretya-pryadilnaya.png.asset.json";
+import heroImage from "@/assets/55.png.asset.json";
+import resultImage from "@/assets/buk.png.asset.json";
+import imgVpm from "@/assets/101.webp.asset.json";
+import imgNpm from "@/assets/102.webp.asset.json";
+import imgFinal from "@/assets/100.webp.asset.json";
+import imgUvs from "@/assets/uvs.png.asset.json";
+import imgMaps from "@/assets/maps.png.asset.json";
+import imgMats from "@/assets/mats.png.asset.json";
 
 export type CaseImage = {
   image: string | null;
@@ -36,7 +43,7 @@ export const caseStudy = {
     },
     { label: "Программы", value: "Blender · Photoshop" },
   ],
-  task: "Проект жилого дома на улице Третья Прядильная. Для проекта выполнены низкополигональная и высокополигональная модели — объект капитального строительства и комплексное благоустройство участка.",
+  task: "Проект жилого дома на улице Третья Прядильная для компании ПИК. Для проекта выполнены низкополигональная и высокополигональная модели — объект капитального строительства и комплексное благоустройство участка.",
   hero: {
     image: heroImage.url,
     label: "Третья Прядильная",
@@ -65,11 +72,11 @@ export const caseStudy = {
     {
       index: "03",
       title: "Оптимизация",
-      text: "После создания исходной модели геометрия была адаптирована под требования НПМ: оптимизирована полигональность, проверены нормали и трансформации, подготовлена структура объектов.",
+      text: "После создания исходной модели геометрия была адаптирована под требования НПМ: оптимизирована полигональность, проверены нормали и трансформации, подготовлена структура объектов. ВПМ — 190 тыс. полигонов, НПМ — 41 тыс. полигонов.",
       images: [
-        { image: null, label: "HIGH POLY", caption: "1600 × 1200", ratio: "4 / 3", fit: "cover" },
-        { image: null, label: "LOW POLY", caption: "1600 × 1200", ratio: "4 / 3", fit: "cover" },
-        { image: null, label: "WIREFRAME", caption: "1600 × 1200", ratio: "4 / 3", fit: "contain" },
+        { image: imgVpm.url, label: "ВПМ", caption: "190 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
+        { image: imgNpm.url, label: "НПМ", caption: "41 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
+        { image: imgFinal.url, label: "Финальный вид", caption: "1920 × 1080", ratio: "4 / 3", fit: "contain" },
       ],
       columns: 3,
     },
@@ -78,9 +85,9 @@ export const caseStudy = {
       title: "UV и текстуры",
       text: "Для модели подготовлены UV-развёртки и текстурные наборы с учётом технических требований проекта.",
       images: [
-        { image: null, label: "UV Layout", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
-        { image: null, label: "Texture Atlas", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
-        { image: null, label: "Final Material", caption: "2048 × 2048", ratio: "1 / 1", fit: "cover" },
+        { image: imgUvs.url, label: "UV Layout", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: imgMaps.url, label: "Texture Atlas", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: imgMats.url, label: "Final Material", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
       ],
       columns: 3,
     },
@@ -99,7 +106,7 @@ export const caseStudy = {
       title: "Результат",
       text: "Модель была подготовлена к технической проверке и передаче в составе комплекта АГР.",
       images: [
-        { image: heroImage.url, label: "Третья Прядильная", caption: "1920 × 1080", ratio: "16 / 9", fit: "cover" },
+        { image: resultImage.url, label: "Фасады — материалы", caption: "1920 × 1080", ratio: "16 / 9", fit: "contain" },
       ],
       columns: 1,
     },

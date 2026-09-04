@@ -42,10 +42,10 @@ function Index() {
         <FeaturedCaseStudy />
         <About />
         <Experience />
-        <Skills />
-        <Software />
-        <Stats />
         <Education />
+        <Software />
+        <Skills />
+        <Stats />
         <Contact />
       </main>
       <Footer />
