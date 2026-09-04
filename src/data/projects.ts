@@ -64,7 +64,7 @@ export const projects: Project[] = [
     title: "Гимназия №41",
     image: img03.url,
     type: "Образовательный комплекс",
-    year: 2025,
+    year: 2026,
     tagsLeft: LEFT,
     tagsRight: RIGHT,
     description: "Оптимизация геометрии и подготовка НПМ.",

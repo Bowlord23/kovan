@@ -42,6 +42,12 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <a
+            href={person.email.href}
+            className="hidden text-xs text-muted-foreground transition-colors hover:text-foreground sm:block md:text-sm"
+          >
+            {person.email.label}
+          </a>
+          <a
             href={person.telegram.href}
             target="_blank"
             rel="noopener noreferrer"
