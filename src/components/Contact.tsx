@@ -4,7 +4,7 @@ import { Section } from "./Section";
 
 export function Contact() {
   return (
-    <Section id="contact" className="pb-24 md:pb-32">
+    <Section id="contact" bordered={false}>
       <div className="container-site">
         <div className="border-l border-border pl-6 py-12 md:pl-12 md:py-16 lg:pl-16">
           <Reveal>
