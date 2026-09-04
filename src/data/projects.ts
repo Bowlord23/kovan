@@ -7,15 +7,8 @@
  * Всё — картинка заменится. Имя файла может быть любым.
  * Если image: null — показывается аккуратный placeholder.
  *
- * Сейчас используются загруженные изображения из src/assets (CDN).
+ * Изображения хранятся локально в public/images.
  */
-
-import img01 from "@/assets/01.png.asset.json";
-import img02 from "@/assets/02.png.asset.json";
-import img03 from "@/assets/03.png.asset.json";
-import img04 from "@/assets/04.png.asset.json";
-import img05 from "@/assets/05.png.asset.json";
-import img06 from "@/assets/06.png.asset.json";
 
 export type Project = {
   id: string;
@@ -38,7 +31,7 @@ export const projects: Project[] = [
     id: "p01",
     number: "01",
     title: "Третья Прядильная",
-    image: img01.url,
+    image: "/images/01.png",
     type: "Жилой комплекс",
     year: 2026,
     tagsLeft: LEFT,
@@ -50,7 +43,7 @@ export const projects: Project[] = [
     id: "p02",
     number: "02",
     title: "Садовая",
-    image: img02.url,
+    image: "/images/02.png",
     type: "Жилой дом",
     year: 2026,
     tagsLeft: LEFT,
@@ -62,7 +55,7 @@ export const projects: Project[] = [
     id: "p03",
     number: "03",
     title: "Гимназия №41",
-    image: img03.url,
+    image: "/images/03.png",
     type: "Образовательный комплекс",
     year: 2026,
     tagsLeft: LEFT,
@@ -74,7 +67,7 @@ export const projects: Project[] = [
     id: "p04",
     number: "04",
     title: "Малышева",
-    image: img04.url,
+    image: "/images/04.png",
     type: "МФК",
     year: 2026,
     tagsLeft: LEFT,
@@ -86,7 +79,7 @@ export const projects: Project[] = [
     id: "p05",
     number: "05",
     title: "Блок 4",
-    image: img05.url,
+    image: "/images/05.png",
     type: "Квартал",
     year: 2026,
     tagsLeft: LEFT,
@@ -98,7 +91,7 @@ export const projects: Project[] = [
     id: "p06",
     number: "06",
     title: "Волковский",
-    image: img06.url,
+    image: "/images/06.png",
     type: "Общественное здание",
     year: 2025,
     tagsLeft: LEFT,
