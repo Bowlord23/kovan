@@ -24,7 +24,7 @@ export function Contact() {
                 rel="noopener noreferrer"
                 className="group inline-block"
               >
-                <h2 className="text-4xl font-extrabold leading-[1.1] tracking-tighter transition-colors duration-500 md:text-6xl lg:text-7xl xl:text-8xl">
+                <h2 className="text-4xl font-bold leading-[1.1] tracking-tight transition-colors duration-500 md:text-6xl lg:text-7xl xl:text-8xl">
                   <span className="block text-foreground duration-500 group-hover:text-accent">
                     Есть проект?
                   </span>
