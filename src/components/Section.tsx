@@ -22,7 +22,11 @@ export function Section({
       <div className="container-site">
         {title ? (
           <Reveal className="mb-10 flex flex-col gap-3 md:mb-14 md:flex-row md:items-end md:justify-between">
-            <h2 className="text-2xl font-medium tracking-tight md:text-3xl">{title}</h2>
+            <h2
+              className={`${title === "Избранный проект" ? "text-3xl md:text-5xl" : "text-2xl md:text-3xl"} font-medium tracking-tight`}
+            >
+              {title}
+            </h2>
             {subtitle ? (
               <p className="max-w-md text-sm leading-relaxed text-muted-foreground">{subtitle}</p>
             ) : null}
