@@ -25,11 +25,11 @@ function App() {
         <ProjectsGrid />
         <FeaturedCaseStudy />
         <About />
+        <Stats />
         <Experience />
         <Education />
         <Software />
         <Skills />
-        <Stats />
         <Contact />
       </main>
       <Footer />
