@@ -12,4 +12,7 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Netlify sets NETLIFY=true during builds. Keep Cloudflare as the default
+  // everywhere else so the existing deployment and Lovable preview still work.
+  nitro: process.env.NETLIFY ? { preset: "netlify" } : true,
 });
