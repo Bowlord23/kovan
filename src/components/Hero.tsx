@@ -44,9 +44,10 @@ export function Hero() {
 
         <Reveal delay={120}>
           <MediaFrame
+            src="/images/55.png"
+            alt="Третья Прядильная"
             label="FEATURED RENDER"
             caption="1920 × 1080"
-            hint="Replace image"
             ratio="16 / 9"
           />
         </Reveal>
