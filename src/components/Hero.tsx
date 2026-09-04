@@ -25,7 +25,7 @@ export function Hero() {
             <p className="mt-8 border-t border-border pt-6 text-sm text-muted-foreground">
               {person.facts}
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+                       <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#projects"
                 className="border border-border px-5 py-2.5 text-sm transition-colors duration-300 hover:border-foreground/60 hover:bg-surface"
@@ -44,7 +44,7 @@ export function Hero() {
 
         <Reveal delay={120}>
           <MediaFrame
-            src="/images/55.png"
+            src="./images/55.png"
             alt="Третья Прядильная"
             label="FEATURED RENDER"
             caption="1920 × 1080"

@@ -28,15 +28,12 @@ export const caseStudy = {
   meta: [
     { label: "Год", value: "2026" },
     { label: "Тип объекта", value: "Жилой дом" },
-    {
-      label: "Роль",
-      value: "3D-моделирование · оптимизация · UV · текстурирование · техническая подготовка",
-    },
+    { label: "Роль", value: "3D-моделирование · оптимизация · UV · текстурирование · техническая подготовка" },
     { label: "Программы", value: "Blender · Photoshop" },
   ],
   task: "Проект жилого дома на улице Третья Прядильная для компании ПИК. Для проекта выполнены низкополигональная и высокополигональная модели — объект капитального строительства и комплексное благоустройство участка.",
   hero: {
-    image: "/images/buk.png",
+    image: "./images/buk.png",
     label: "Третья Прядильная",
     caption: "1920 × 1080",
     ratio: "16 / 9",
@@ -65,9 +62,9 @@ export const caseStudy = {
       title: "Оптимизация",
       text: "После создания исходной модели геометрия была адаптирована под требования НПМ: оптимизирована полигональность, проверены нормали и трансформации, подготовлена структура объектов. ВПМ — 190 тыс. полигонов, НПМ — 41 тыс. полигонов.",
       images: [
-        { image: "/images/102.png", label: "НПМ", caption: "41 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
-        { image: "/images/101.png", label: "ВПМ", caption: "190 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
-        { image: "/images/100.png", label: "Финальный вид", caption: "1920 × 1080", ratio: "4 / 3", fit: "contain" },
+        { image: "./images/102.png", label: "НПМ", caption: "41 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
+        { image: "./images/101.png", label: "ВПМ", caption: "190 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
+        { image: "./images/100.png", label: "Финальный вид", caption: "1920 × 1080", ratio: "4 / 3", fit: "contain" },
       ],
       columns: 3,
     },
@@ -76,9 +73,9 @@ export const caseStudy = {
       title: "UV и текстуры",
       text: "Для модели подготовлены UV-развёртки и текстурные наборы с учётом технических требований проекта.",
       images: [
-        { image: "/images/uvs.png", label: "UV-развертка проекта", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
-        { image: "/images/maps.png", label: "Текстурные карты ОКС", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
-        { image: "/images/mats.png", label: "Подключение текстур", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: "./images/uvs.png", label: "UV-развертка проекта", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: "./images/maps.png", label: "Текстурные карты ОКС", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: "./images/mats.png", label: "Подключение текстур", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
       ],
       columns: 3,
     },
@@ -95,9 +92,9 @@ export const caseStudy = {
     {
       index: "06",
       title: "Результат",
-      text: "Модель была подготовлена к технической проверке и передаче в составе комплекта АГР.",
+      text: "Модель была подготовлена к технической проверке иethol передаче в составе комплекта АГР.".replace("иethol ", "и "),
       images: [
-        { image: "/images/buk.png", label: "Фасады — материалы", caption: "1920 × 1080", ratio: "16 / 9", fit: "contain" },
+        { image: "./images/buk.png", label: "Фасады — материалы", caption: "1920 × 1080", ratio: "16 / 9", fit: "contain" },
       ],
       columns: 1,
     },
