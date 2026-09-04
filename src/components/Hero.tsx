@@ -38,6 +38,13 @@ export function Hero() {
               >
                 Связаться ↗
               </a>
+              <a
+                href="./Ivan-Kovannyi-Portfolio.pdf"
+                download="Ivan-Kovannyi-Portfolio.pdf"
+                className="px-3 py-2.5 text-xs text-muted-foreground/70 transition-colors duration-300 hover:text-foreground"
+              >
+                Скачать портфолио PDF ↓
+              </a>
             </div>
           </Reveal>
         </div>
