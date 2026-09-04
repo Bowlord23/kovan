@@ -76,9 +76,9 @@ export const caseStudy = {
       title: "UV и текстуры",
       text: "Для модели подготовлены UV-развёртки и текстурные наборы с учётом технических требований проекта.",
       images: [
-        { image: "/images/uvs.png", label: "UV Layout", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
-        { image: "/images/maps.png", label: "Texture Atlas", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
-        { image: "/images/mats.png", label: "Final Material", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: "/images/uvs.png", label: "UV-развертка проекта", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: "/images/maps.png", label: "Текстурные карты ОКС", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
+        { image: "/images/mats.png", label: "Подключение текстур", caption: "2048 × 2048", ratio: "1 / 1", fit: "contain" },
       ],
       columns: 3,
     },
