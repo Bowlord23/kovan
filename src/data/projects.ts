@@ -52,7 +52,7 @@ export const projects: Project[] = [
     title: "Садовая",
     image: img02.url,
     type: "Жилой дом",
-    year: 2025,
+    year: 2026,
     tagsLeft: LEFT,
     tagsRight: RIGHT,
     description: "Моделирование ОКС и прилегающего благоустройства.",
