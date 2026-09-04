@@ -49,6 +49,8 @@ export function Hero() {
             label="FEATURED RENDER"
             caption="1920 × 1080"
             ratio="16 / 9"
+            zoomable={false}
+            className="!border-0 !bg-transparent"
           />
         </Reveal>
       </div>
