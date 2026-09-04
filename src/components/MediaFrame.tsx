@@ -78,15 +78,3 @@ export function MediaFrame({
     </button>
   );
 }
-      <img
-        src={src}
-        alt={alt ?? label}
-        loading="lazy"
-        decoding="async"
-        className={`h-full w-full transition-transform duration-[350ms] ease-out group-hover:scale-[1.03] ${
-          fit === "contain" ? "object-contain" : "object-cover"
-        }`}
-      />
-    </button>
-  );
-}
