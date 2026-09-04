@@ -1,6 +1,8 @@
 import type { ReactNode } from "react";
 import { Reveal } from "./Reveal";
 
+const compactSectionIds = new Set(["about", "stats", "experience", "education", "software", "skills", "contact"]);
+
 export function Section({
   id,
   title,
@@ -17,7 +19,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={`${bordered ? "border-t border-border" : ""} py-16 md:py-24`}
+      className={`${bordered ? "border-t border-border" : ""} ${id && compactSectionIds.has(id) ? "py-14 md:py-20" : "py-16 md:py-24"}`}
     >
       <div className="container-site">
         {title ? (
