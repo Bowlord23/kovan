@@ -74,8 +74,8 @@ export const caseStudy = {
       title: "Оптимизация",
       text: "После создания исходной модели геометрия была адаптирована под требования НПМ: оптимизирована полигональность, проверены нормали и трансформации, подготовлена структура объектов. ВПМ — 190 тыс. полигонов, НПМ — 41 тыс. полигонов.",
       images: [
-        { image: imgVpm.url, label: "ВПМ", caption: "190 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
-        { image: imgNpm.url, label: "НПМ", caption: "41 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
+        { image: imgVpm.url, label: "НПМ", caption: "41 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
+        { image: imgNpm.url, label: "ВПМ", caption: "190 тыс. полигонов", ratio: "4 / 3", fit: "cover" },
         { image: imgFinal.url, label: "Финальный вид", caption: "1920 × 1080", ratio: "4 / 3", fit: "contain" },
       ],
       columns: 3,
