@@ -84,8 +84,8 @@ export const caseStudy = {
       title: "Благоустройство",
       images: [
         { image: "./images/maf.png", label: "МАФ · 01", caption: "1600 × 1200", ratio: "4 / 3", fit: "cover" },
-        { image: "./images/flo.png", label: "МАФ · 02", caption: "1600 × 1200", ratio: "4 / 3", fit: "cover" },
-        { image: "./images/blag.png", label: "Растительность · 03", caption: "1600 × 1200", ratio: "4 / 3", fit: "cover" },
+        { image: "./images/flo.png", label: "Растительность · 02", caption: "1600 × 1200", ratio: "4 / 3", fit: "cover" },
+        { image: "./images/blag.png", label: "МАФ · 03", caption: "1600 × 1200", ratio: "4 / 3", fit: "cover" },
       ],
       columns: 3,
     },
